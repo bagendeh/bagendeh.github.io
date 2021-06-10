@@ -76,7 +76,28 @@ you give to every one who knows you">
 			text-decoration: none;
 			color:#339933;
 		}
+        
+        }
+		#copyright{
+			font-family: 'Montserrat',sans-serif;
+			opacity: 0.8;
+		}
+		#copyright a{
+			text-decoration: none;
+		}
+		#copyright a:hover{
+			text-decoration: none;
+			color:#339933;
+		}
+        #hbd_song{
+            display: none;
+        }
 	</style>
+	<script>
+        window.onload = function() {
+    document.getElementById("hbd_song").play();
+        }
+    </script>
 	<link href="css/style.css" type="text/css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="shortcut icon" href="./cake.png" type="image/png" />
@@ -117,6 +138,10 @@ you give to every one who knows you">
 			</div>
 			<div id="loveHeart">
 				<canvas id="garden" style="display:none"></canvas>
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden" style="display:none"></canvas>
+                <audio id="hbd_song" src="audio/hbd.mp3" loop="loop"></audio>
 			</div>
 		</div>
 	</div>
